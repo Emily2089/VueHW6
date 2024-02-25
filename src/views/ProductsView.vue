@@ -44,7 +44,6 @@ export default {
         .then(() => {
           // this.getCart();
           this.status.addToCartLoading = '';
-          // note：這裡 $refs 後面是接 userProductModal 而不是 userModal
           this.$refs.userModal.close();
         })
         .catch((err) => alert(err.response.data.message));
