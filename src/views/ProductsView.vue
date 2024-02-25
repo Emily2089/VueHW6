@@ -60,7 +60,6 @@ export default {
   <h1>產品列表</h1>
   <UserProductModal :temp-product="tempProduct" :add-to-cart="addToCart" ref="userModal"
     ></UserProductModal>
-  {{ tempProduct }}
   <table class="table align-middle">
     <thead>
       <tr>
