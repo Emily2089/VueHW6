@@ -1,5 +1,5 @@
 <script>
-import userProductModal from '../components/UserProductModal.vue';
+import UserProductModal from '../components/UserProductModal.vue';
 
 const { VITE_API_URL, VITE_API_NAME } = import.meta.env;
 
@@ -20,7 +20,7 @@ export default {
     };
   },
   components: {
-    userProductModal,
+    UserProductModal,
   },
   methods: {
     getProducts() {

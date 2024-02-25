@@ -12,7 +12,6 @@ export default {
   },
   methods: {
     login() {
-      // const url = `${VITE_API_URL}/v2/admin/signin`;
       this.axios.post(`${VITE_API_URL}/admin/signin`, this.user)
         .then((res) => {
           // 存取 token 到 cookie
@@ -29,7 +28,6 @@ export default {
 </script>
 
 <template>
-  <!-- <h1>登入頁面</h1> -->
   <div id="app">
     <div class="container">
       <div class="row justify-content-center">

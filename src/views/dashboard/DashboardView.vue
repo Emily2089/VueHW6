@@ -13,7 +13,6 @@ export default {
         .catch(() => {
           this.$router.push('/login');
           // alert(err.response.data.message);
-          // window.location = 'index.html';
         });
     },
   },

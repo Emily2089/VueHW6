@@ -3,8 +3,8 @@ import { Modal } from 'bootstrap';
 
 export default {
   props: {
-    tempProduct: String,
-    addToCart: String,
+    tempProduct: Object,
+    addToCart: Function,
   },
   data() {
     return {
@@ -14,15 +14,11 @@ export default {
   },
   methods: {
     open() {
+      this.qty = 1;
       this.productModal.show();
     },
     close() {
       this.productModal.hide();
-    },
-  },
-  watch: {
-    tempProduct() {
-      this.qty = 1;
     },
   },
   mounted() {
